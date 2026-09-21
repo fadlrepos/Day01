@@ -1,0 +1,100 @@
+# Day 1 Evaluation — Boarding Pass Printer
+
+**Duration:** 30 minutes
+**Scope:** console.log(), literals, string concatenation, comparison operators, typeof
+
+---
+
+## Scenario
+
+You are building the display logic for an airport check-in kiosk. 
+
+The kiosk prints information to the console step by step as a passenger checks in. 
+
+Complete this script one `console.log()` at a time, following the required behavior described for each step. Do not use variables, conditions, or loops — only what was covered on Day 1.
+
+---
+
+### Step 1 — Welcome banner  
+
+**Required behavior:** Print a welcome banner for the kiosk, exactly:
+`===== SkyLine Airlines - Check-In =====`
+
+**Expected output:**
+```
+===== SkyLine Airlines - Check-In =====
+```
+
+---
+
+### Step 2 — Passenger line 
+
+**Required behavior:** Print a single line showing the passenger's name and flight number, in the exact format below.
+
+**Expected output:**
+```
+Passenger: Karim Benali | Flight: SL204
+```
+
+---
+
+### Step 3 — Seat number type trap  
+
+**Required behavior:** Print the result of concatenating the text `"Seat: "` with the number `14`. 
+
+Then, on the next line, print the result of concatenating the text `"Seat: "` with the number `14` followed by the letter `"A"` written as a string.
+
+**Expected output:**
+```
+Seat: 14
+Seat: 14A
+```
+
+---
+
+### Step 4 — Boarding time comparison  
+
+**Required behavior:** The boarding time is 45 minutes from now, and the check-in cutoff is 60 minutes. 
+
+Print the result of comparing whether the boarding time (`45`) is less than the cutoff (`60`) using a comparison operator — the output must be a boolean value, not text.
+
+**Expected output:**
+```
+true
+```
+
+---
+
+### Step 5 — Priority boarding check  
+
+**Required behavior:** Print a single line that shows the label `"Priority boarding:"` followed by the boolean result of comparing the passenger's loyalty points (`1200`) against the priority threshold (`1000`), using the greater-than-or-equal operator.
+
+**Expected output:**
+```
+Priority boarding: true
+```
+
+---
+
+### Step 6 — Ticket price type check  
+
+**Required behavior:** Print the result of `typeof` applied to the ticket price value `349.99`.
+
+**Expected output:**
+```
+number
+```
+
+---
+
+### Step 7 — Closing banner  
+
+**Required behavior:** Print a closing line combining the label `"Gate: "` with the number `12` and the label `" | Status: "` with the text `"Boarding"`, using concatenation, in one single `console.log()` call.
+
+**Expected output:**
+```
+Gate: 12 | Status: Boarding
+```
+
+---
+ 
